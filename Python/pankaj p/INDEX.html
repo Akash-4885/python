@@ -1,0 +1,170 @@
+<html>
+<head> 
+<title>Project(Feedback Form) </title>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("http://www.nrigroupindia.com//assets/img/gallery/bul3.JPG");
+
+    
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#outer
+{
+width:1200px;
+height:55px;
+//border:1px solid red;
+margin:0px auto;
+}
+#nav
+{
+opacity:0.5;
+border:2px solid #66c2ff;
+background-color:black;
+border-radius:6px 6px 0px 0px;
+height:50px;
+margin:0px auto;
+}
+#nav:hover
+{
+opacity:1.0;
+}
+#nav ul
+{
+list-style-type:none;
+}
+#nav ul li
+{
+display:inline;
+//border:1px solid;
+padding:10px;
+}
+#nav ul li a
+{
+color:white;
+text-decoration:none;
+}
+#nav ul li a:hover
+{
+color:#ffb84d;
+font-size:115%;
+background-color:#bf00ff;
+padding:18px;
+border-radius:5px;
+}
+#image
+{
+margin-top:5px;
+margin:0px auto;
+width:1200px;
+height:500px;
+//border:1px solid black;
+}
+#im1
+{
+border-radius:0px 0px 6px 6px;
+width:1198px;
+height:500px;
+margin-left:1px;
+}
+#highlight
+{
+background-color:#66c2ff;
+padding:18px;
+border-radius:2px;
+}
+#regist
+{
+background-color:#fffae6;
+width:300px;
+height:535px;
+border:1px solid black;
+margin-left:73%;
+margin-top:20px;
+padding:10px;
+opacity:0.4;
+border-radius:6px;
+border:1px solid blue;
+}
+#regist:hover{opacity:0.85;}
+#butt
+{padding:10px;}
+#butt2
+{
+padding:10px;
+margin-left:65%;
+border-radius:2px;
+color:red;
+font-size:20px;
+}
+#set
+{font-size:20px;
+color:violet;
+padding-left:40px;}
+</style>
+</head>
+<body bgcolor="#ebebe0">
+<div class="bg">
+<h1 style="color:Tomato"><marquee>NRI GROUP OF INSTITUTION RESEARCH & TECHNOLOGY</marquee></h1>
+<hr>
+<div id="outer">
+<div id="nav">
+<ul>
+   
+  <li><a id="highlight" href="LOGIN.html">LOGIN</a></li>
+   <li><a href="ABOUT.html">ABOUT</a></li>
+   <li><a href="CONTACT.html">CONTACT US</a></li>
+   <!--<li><a href="ADREGIS.html">ADMIN REGISTRATION</a></li>-->
+   </ul>
+</div>
+
+<form action="register.php" method="post">
+<div id="regist">
+<b id="set">USER REGISTRATION</b>
+<br/></br>
+<b>Branch</b><br/>
+<select id="butt" name="branch">
+  <option value="cse">CSE</option>
+  <option value="mechanical">Mechanical</option>
+  <option value="civil">Civil</option>
+  <option value="electronics">Electronics</option>
+</select>
+	  <br/>
+	  <br/>
+<label for="fname"><b>First Name</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter First Name" name="fname" required pattern="^[A-Za-z]+" title="Enter Only Alphabets.">
+	  <br/>
+	  <br/>
+<label for="lname"><b>Last Name</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter Last Name" name="lname" required pattern="^[A-Za-z]+" title="Enter Only Alphabets.">
+	  <br/>
+	  <br/>
+	  <label for="email"><b>Email ID</b></label><br/>
+      <input id="butt" type="email" placeholder="Enter Your Email" name="email" required>
+	  <br/>
+	  <br/>
+	  <label for="enrol"><b>Enrollment ID</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter Your Enrollment ID" name="enrol" required>
+	  <br/>
+	  <br/>
+      <label for="psw"><b>Password</b></label><br/>
+      <input id="butt" type="password" placeholder="Enter Password" name="psw" required>
+       <br/>	 
+       <br/> 
+      <button id="butt2" type="submit" name="submit1">Register</button>
+      <label>
+	  </div>
+	  </form>
+	  
+	  </div>
+</div>
+</body>
+</html>

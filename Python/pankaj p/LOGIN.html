@@ -1,0 +1,199 @@
+<html>
+<head>
+<style>
+#box3
+{
+width:1002px;
+height:452px;
+//border:1px solid blue;
+margin:0px auto;
+margin-top:100px;
+}
+#box
+{
+width:450px;
+height:450px;
+float:right;
+//border:1px solid red;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSclxBamYGJu1iL9NfIUraeFBctnpM0fWmFdI4oY0YTIc-BmSuH_g");
+}
+
+#box2
+{
+width:450px;
+height:450px;
+//border:1px solid red;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSoKy6fjXUs3dUgaZvEDHld41iRMurYbtKXgHaRv9Sqp6OVR5");
+}
+#cen
+{
+margin:210px 170px 200px 170px;
+}
+#cen2
+{
+margin:210px 160px 200px 170px;
+
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*the button of user and admin*/
+button {
+    background-color: #007acc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+	opacity:0.4;
+}
+button:hover {
+    opacity: 0.8;
+}
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44 336;
+}*/
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/*popup*/
+.modal {
+    display: none;
+   position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+	border:1px solid black;
+}
+/*login bg*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+/*the cross symbol*/
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+</style>
+</head>
+<body bgcolor="#fff5cc">
+<div id="box3">
+<div id="box">
+<button id="cen" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">User Login</button>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="user.php" method="post">
+  <div>
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  </div>
+    <div class="container">
+      <label for="enrol"><b>Enrollment ID</b></label>
+      <input type="text" placeholder="Enter Your Enrollment ID" name="enrol" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" name="submit1">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <!--<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>-->
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+<div id="box2">
+<button id="cen2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Admin Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="admin.php" method="post">
+  <div>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  </div>
+    <div class="container">
+      <label for="enrol"><b>Enrollment ID</b></label>
+      <input type="text" placeholder="Enter Your Enrollment ID" name="enrol" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" name="submit1">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <!--<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>-->
+	
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+</div>
+</body>
+</html>

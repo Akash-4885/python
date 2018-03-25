@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>ADMIN REGISTRATION	</title>
+<style>
+#regist
+{
+background-color:#fffae6;
+width:300px;
+height:470px;
+border:1px solid black;
+margin-left:40%;
+margin-top:57px;
+padding:10px;
+opacity:0.4;
+border-radius:6px;
+border:1px solid blue;
+}
+#regist:hover{opacity:0.85;}
+#butt
+{padding:10px;}
+#butt2
+{
+padding:10px;
+margin-left:65%;
+border-radius:2px;
+color:red;
+font-size:20px;
+}
+#set
+{font-size:20px;
+color:violet;
+padding-left:40px;}
+</style>
+</head>
+<body>
+<form action="adregis.php" method="post">
+<div id="regist">
+<b id="set">ADMIN REGISTRATION</b>
+<br/></br>
+<label for="fname"><b>First Name</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter First Name" name="fname" required pattern="^[A-Za-z]+" title="Enter Only Alphabets.">
+	  <br/>
+	  <br/>
+<label for="lname"><b>Last Name</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter Last Name" name="lname" required pattern="^[A-Za-z]+" title="Enter Only Alphabets.">
+	  <br/>
+	  <br/>
+	  <label for="email"><b>Email ID</b></label><br/>
+      <input id="butt" type="email" placeholder="Enter Your Email" name="email" required>
+	  <br/>
+	  <br/>
+	  <label for="enrol"><b>Enrollment ID</b></label><br/>
+      <input id="butt" type="text" placeholder="Enter Your Enrollment ID" name="enrol" required>
+	  <br/>
+	  <br/>
+      <label for="psw"><b>Password</b></label><br/>
+      <input id="butt" type="password" placeholder="Enter Password" name="psw" required>
+       <br/>	 
+       <br/> 
+      <button id="butt2" type="submit" name="submit1">Register</button>
+      <label>
+	  </div>
+	  </form>
+</body>
+</html>
